@@ -1,0 +1,30 @@
+version: 1
+default_environment: dev
+project_id: faea8a6c-47ed-40e5-881b-9ed40054a234
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-spotify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spotify.git
+    config:
+      client_id: $CLIENT_ID
+      client_secret: $CLIENT_SECRET
+      refresh_token: $REFRESH_TOKEN
+  loaders:
+  - name: target-snowflake
+    variant: meltanolabs
+    pip_url: meltanolabs-target-snowflake
+    config:
+      account: 'tmcogpy-pb20096'
+      add_record_metadata: false
+      database: YOUR_DATABASE
+      schema: YOUR_SCHEMA
+      load_method: overwrite
+      warehouse: COMPUTE_WH
+      user: YOUR_USER
+      role: ACCOUNTADMIN
+      TARGET_SNOWFLAKE_PASSWORD: $TARGET_SNOWFLAKE_PASSWORD
