@@ -114,6 +114,7 @@ Agora você está pronto para executar sua DAG, trigger ela e verifique se os da
 * Airflow
 
 ## Liguagens utilizadas
+
 * Python
 
 ### Autor
