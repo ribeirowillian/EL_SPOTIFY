@@ -4,9 +4,9 @@ import webbrowser
 import base64
 
 # Defina as configurações do seu app Spotify
-CLIENT_ID = '13316762f31e4cf3ae0b89fe485d05e8'
-CLIENT_SECRET = 'dd25db3db38c4739ab65f5d93637c371'
-REDIRECT_URI = 'http://localhost:3000'
+CLIENT_ID = 'YOUR_CLIENT_ID'
+CLIENT_SECRET = 'YOUR_CLIENT_SECRET'
+REDIRECT_URI = 'YOUR_REDIRECT_URI'
 
 
 # Construa a URL para solicitar o código
