@@ -39,7 +39,8 @@ REDIRECT_URI = 'YOUR_REDIRECT_URI'
 2. Na janela do navegador que será aberta copie os caracteres depois de: ```code=```
 ![alt text](barranavegacao.png)
 
-3. Anote o Refresh Token para as próximas etapas.
+3. Cole o código na caixa de texto que aparecerá em seu terminal.
+4. Anote o Refresh Token para as próximas etapas.
 
 ## Snowflake
 
